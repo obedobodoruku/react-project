@@ -17,6 +17,25 @@ body {
     margin-top: 20px;
 }
 
+.card-items p {
+    line-height: 2rem;
+} 
+
+.form-group label {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.form-group div {
+    margin-top: 50px;
+}
+
+.form-group input, .form-group textarea {
+    margin-top: 20px;
+}
+
+
+
 @media screen and (max-width: 720px) {
     
     .cards {

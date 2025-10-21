@@ -3,14 +3,23 @@ import React from 'react';
 const Cards = () => {
   return (
     <div className="cards flex flex-row items-center justify-center gap-9 my-[150px]">
-      <div className="card-items w-[400px] h-[400px] bg-gray-900 border-2 border-blue-500">
+      <div className="card-items w-[400px] h-[400px] bg-gray-900 border-2 border-blue-500 p-5">
         <h4>Hello World</h4>
+        <div className="flex flex-col items-center justify-center text-white text-center text-[0.9rem] mt-7">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus laudantium ullam error repellat tempora, odit dignissimos adipisci quam quibusdam distinctio libero numquam tempore nostrum quasi sed obcaecati eligendi labore? Eaque!</p>
+        </div>
       </div>
-      <div className="card-items w-[400px] h-[400px] bg-gray-900 border-2 border-blue-500">
-        <h4>Hello World</h4>
+      <div className="card-items w-[400px] h-[400px] bg-gray-900 border-2 border-blue-500 p-5">
+        <h4>Hi There!</h4>
+        <div className="flex flex-col items-center justify-center text-white text-center text-[0.9rem] mt-7">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus laudantium ullam error repellat tempora, odit dignissimos adipisci quam quibusdam distinctio libero numquam tempore nostrum quasi sed obcaecati eligendi labore? Eaque!</p>
+        </div>
       </div>
-      <div className="card-items w-[400px] h-[400px] bg-gray-900 border-2 border-blue-500">
-        <h4>Hello World</h4>
+      <div className="card-items w-[400px] h-[400px] bg-gray-900 border-2 border-blue-500 p-5">
+        <h4>What's Up!</h4>
+        <div className="flex flex-col items-center justify-center text-white text-center text-[0.9rem] mt-7">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus laudantium ullam error repellat tempora, odit dignissimos adipisci quam quibusdam distinctio libero numquam tempore nostrum quasi sed obcaecati eligendi labore? Eaque!</p>
+        </div>
       </div>
     </div>
   )
@@ -20,7 +29,7 @@ const Home = () => {
     return (
         <div>
             <div className="home-text text-white w-full h-[200px] mt-[200px]">
-                <h1 className="text-center text-7xl font-bold">Welcome to My <span className="text-blue-500 underline">React</span> Project</h1>
+                <h1 className="text-center text-7xl font-bold">Welcome to My <span className="text-blue-500">React</span> Project</h1>
             </div>
             <Cards />
         </div>

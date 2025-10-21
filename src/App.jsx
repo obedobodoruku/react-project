@@ -27,6 +27,7 @@ const Navbar = () => {
 const Footer = () => {
     return (
       <div className='flex flex-col items-center justify-center'>
+        <hr className="border-white w-full my-5" />
         <footer>
           <span className="text-white text-center text-[0.8rem]">By Obed Obodoruku © 2025</span>
         </footer>
