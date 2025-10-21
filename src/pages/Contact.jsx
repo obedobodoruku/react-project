@@ -21,7 +21,7 @@ const Contact = () => {
             <h1 className="text-center text-white text-5xl font-bold mt-[70px]">Contact Us!</h1>
 
             <div className="form-group flex flex-col items-center justify-center mt-[100px]">
-                <form className="w-full text-white">
+                <form onSubmit={handleSubmit} className="w-full text-white">
                     <fieldset className="border-2 border-blue-500 p-5 rounded-[20px]">
                         <legend className='text-5xl font-bold'>Hello There!</legend>
                         <div>
@@ -53,7 +53,7 @@ const Contact = () => {
                             </label>
                             
                             <div className='flex flex-col items-center justify-center'>
-                                <button className='w-[200px] bg-blue-500 p-2 rounded-[20px] text-white' onClick={handleSubmit} type="button">
+                                <button className='w-[200px] bg-blue-500 p-2 rounded-[20px] text-white' type="submit">
                                     Submit
                                 </button>
                             </div>
