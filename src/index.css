@@ -1,6 +1,7 @@
 @import "tailwindcss";
 
 body {
+    
     background-color: #001;
     padding: 20px;
 }
@@ -48,5 +49,9 @@ body {
 
     .home-text {
         margin-bottom: 300px;
+    }
+
+    nav > ul {
+        font-size: 0.8rem;
     }
 }

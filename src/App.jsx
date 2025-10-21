@@ -11,8 +11,8 @@ import Contact from './pages/Contact';
 const Navbar = () => {
     return (
         <div className='top-0 sticky border-2 border-white backdrop-blur-2xl text-white mt-7 p-4 rounded-full'>
-          <nav className="flex items-center  justify-between">
-              <div className='text-3xl font-bold '>APP</div>
+          <nav className="flex items-center px-3 justify-between">
+              <div className='text-4xl font-bold '>APP</div>
               <ul className='flex gap-4'>
                   <li className='hover:underline'><Link to="/">Home</Link></li>
                   <li  className='hover:underline'><Link to="/about">About</Link></li>
