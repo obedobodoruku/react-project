@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router';
 
 const Cards = () => {
   return (
@@ -29,7 +30,9 @@ const Home = () => {
     return (
         <div>
             <div className="home-text text-white w-full mb-[200px] mt-[100px]">
-                <h1 className="text-center text-7xl font-bold">Welcome to My <span className="text-blue-500">React</span> Project</h1>
+                <h1 className="text-center text-7xl font-bold">Welcome to My <span className="react-span text-blue-500">
+                        <Link to="https://react.dev/">React</Link>
+                        </span> Project</h1>
             </div>
             <Cards />
         </div>

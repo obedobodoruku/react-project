@@ -10,9 +10,9 @@ import Contact from './pages/Contact';
 
 const Navbar = () => {
     return (
-        <div className='top-0 sticky border-2 border-white backdrop-blur-2xl text-white mt-7 p-4 rounded-full'>
+        <div className='top-0 sticky border-[2px] border-white backdrop-blur-2xl py-[7px] text-white mt-7 rounded-[10px]'>
           <nav className="flex items-center px-3 justify-between">
-              <div className='text-4xl font-bold '>APP</div>
+              <div className='text-2xl font-bold '>APP</div>
               <ul className='flex gap-4'>
                   <li className='hover:underline'><Link to="/">Home</Link></li>
                   <li  className='hover:underline'><Link to="/about">About</Link></li>
