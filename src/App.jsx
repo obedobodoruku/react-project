@@ -10,7 +10,7 @@ import Contact from './pages/Contact';
 
 const Navbar = () => {
     return (
-        <div className='top-0 sticky border-[2px] border-white backdrop-blur-2xl py-[7px] text-white mt-7 rounded-[10px]'>
+        <div className='top-0 sticky border-[2px] border-blue-500 backdrop-blur-3xl py-[7px] text-white mt-7 rounded-[10px]'>
           <nav className="flex items-center px-3 justify-between">
               <div className='text-2xl font-bold '>APP</div>
               <ul className='flex gap-4'>
