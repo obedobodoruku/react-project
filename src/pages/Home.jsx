@@ -30,7 +30,7 @@ const Video = () => {
   return (
     <div className="flex flex-col items-center justify-center my-[150px]">
         <iframe
-        className="react-vid w-[900px] h-[500px]"
+        className="react-vid w-[900px] h-[500px] rounded-[12px]"
         src="https://www.youtube.com/embed/Tn6-PIqc4UM"
         title="React.js Tutorial for Beginners"
         allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
