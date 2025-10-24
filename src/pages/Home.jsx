@@ -5,23 +5,38 @@ const Cards = () => {
   return (
     <div className="cards flex flex-row items-center justify-center gap-9 mt-[100px]">
       <div className="card-items w-[400px] h-[400px] bg-gray-900 border-2 border-blue-500 p-5">
-        <h4 className='underline'>Hello World</h4>
+        <h4 className='underline'>JavaScript Library for UIs</h4>
         <div className="flex flex-col items-center justify-center text-white text-center text-[0.9rem] mt-7">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus laudantium ullam error repellat tempora, odit dignissimos adipisci quam quibusdam distinctio libero numquam tempore nostrum quasi sed obcaecati eligendi labore? Eaque!</p>
+            <p>React is a JavaScript library specifically designed for building user interfaces (UIs) for web and mobile applications. It's not a full-fledged framework, but rather a tool focused on the view layer.</p>
         </div>
       </div>
       <div className="card-items w-[400px] h-[400px] bg-gray-900 border-2 border-blue-500 p-5">
-        <h4 className='underline'>Hi There!</h4>
+        <h4 className='underline'>Component-Based Architecture</h4>
         <div className="flex flex-col items-center justify-center text-white text-center text-[0.9rem] mt-7">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus laudantium ullam error repellat tempora, odit dignissimos adipisci quam quibusdam distinctio libero numquam tempore nostrum quasi sed obcaecati eligendi labore? Eaque!</p>
+            <p> React promotes a component-based approach, where UIs are broken down into small, reusable, and independent pieces of code called components. These components can be combined to build complex interfaces.</p>
         </div>
       </div>
       <div className="card-items w-[400px] h-[400px] bg-gray-900 border-2 border-blue-500 p-5">
-        <h4 className='underline'>What's Up!</h4>
+        <h4 className='underline'>JSX</h4>
         <div className="flex flex-col items-center justify-center text-white text-center text-[0.9rem] mt-7">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus laudantium ullam error repellat tempora, odit dignissimos adipisci quam quibusdam distinctio libero numquam tempore nostrum quasi sed obcaecati eligendi labore? Eaque!</p>
+            <p> React often uses JSX (JavaScript XML), a syntax extension that allows developers to write HTML-like code directly within JavaScript. This makes it easier to define UI structures within components.</p>
         </div>
       </div>
+    </div>
+  )
+}
+
+const Video = () => {
+  return (
+    <div className="flex flex-col items-center justify-center my-[150px]">
+        <iframe
+        className="react-vid w-[900px] h-[500px]"
+        src="https://www.youtube.com/embed/Tn6-PIqc4UM"
+        title="React.js Tutorial for Beginners"
+        allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
+        allowFullScreen
+      ></iframe>
+        <p className="text-center text-white font-bold mt-5">React 101 for Beginners in just 100 seconds</p>
     </div>
   )
 }
@@ -35,6 +50,8 @@ const Home = () => {
                         </span> Project</h1>
             </div>
             <Cards />
+
+            <Video />
         </div>
     );
 };

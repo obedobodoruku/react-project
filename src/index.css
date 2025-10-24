@@ -78,4 +78,9 @@ body {
     nav > ul {
         font-size: 0.8rem;
     }
+
+    .react-vid {
+        width: 350px;
+        height: 300px;
+    }
 }
