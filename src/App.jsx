@@ -6,6 +6,7 @@ import Home from './pages/Home';
 import Contact from './pages/Contact';
 import Blog from './pages/Blog';
 import NewBlog from './pages/NewBlog';
+import BlogPost from './pages/BlogPost';
 
 
 
@@ -14,8 +15,8 @@ const Navbar = () => {
     return (
         <div className='top-0 sticky border-[2px] border-blue-500 backdrop-blur-3xl py-[7px] text-white mt-7 rounded-[10px]'>
           <nav className="flex items-center px-3 justify-between">
-              <div className='text-2xl font-bold '>APP</div>
-              <ul className='flex gap-4'>
+              <div className='text-2xl font-extrabold cursor-pointer'><Link to="/">APP</Link></div>
+              <ul className='flex gap-4 font-bold'>
                   <li className='hover:underline'><Link to="/">Home</Link></li>
                   <li  className='hover:underline'><Link to="/about">About</Link></li>
                   <li  className='hover:underline'><Link to="/contact">Contact</Link></li>
@@ -44,6 +45,8 @@ const App = () => {
       const [error, setError] = useState(null);
       const [loading, setLoading] = useState(false);
 
+      const [blogs, setBlogs] = useState([]);
+
   return (
     <div>
       
@@ -61,13 +64,27 @@ const App = () => {
            setError={setError}
            loading={loading}
            setLoading={setLoading}
+           setBlogs={setBlogs}
            />} />
            <Route path="new-blog" element={<NewBlog 
            error={error}
            setError={setError}
            loading={loading}
            setLoading={setLoading}
+           setBlogs={setBlogs}
            />} />
+           <Route path='blog-post/:id'my
+           element={<BlogPost
+           data={data}
+           setData={setData} 
+           error={error}
+           setError={setError}
+           loading={loading}
+           setLoading={setLoading}
+           setBlogs={setBlogs}
+            />} 
+           
+           />
         </Routes>
         <Footer />
       </BrowserRouter>

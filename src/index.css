@@ -107,4 +107,8 @@ body {
         width: 350px;
         height: 300px;
     }
+
+    .blog-post {
+        width: 100%;
+    }
 }

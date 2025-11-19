@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router";
 
-export default function NewBlog({ error, loading, setError, setLoading }) {
+export default function NewBlog({ setBlogs, error, loading, setError, setLoading }) {
 
     let newID = 0;
     const navigate = useNavigate();
@@ -9,7 +9,7 @@ export default function NewBlog({ error, loading, setError, setLoading }) {
     const [title, setTitle] = useState("");
     const [author, setAuthor] = useState("");
     const [content, setContent] = useState("");
-    const [blogs, setBlogs] = useState([]);
+    
     
 
     const handlePost = (e) => {

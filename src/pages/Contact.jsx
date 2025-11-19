@@ -53,7 +53,7 @@ const Contact = () => {
                             </label>
                             
                             <div className='flex flex-col items-center justify-center'>
-                                <button className='w-[200px] bg-blue-500 p-2 rounded-[20px] text-white' type="submit">
+                                <button className='bg-blue-500 my-3 px-3 py-[2px] w-[130px] font-bold rounded-[7px]' type="submit">
                                     Submit
                                 </button>
                             </div>
