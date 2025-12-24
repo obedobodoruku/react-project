@@ -16,11 +16,11 @@ export default function Blog({ data, setData, error, setError, loading, setLoadi
     }, [])
 
     if (loading) {
-        return <h1 className="text-3xl text-center text-white font-bold">Loading...</h1>
+        return <h1 className="text-3xl text-center text-white font-bold my-4">Loading...</h1>
     }
 
     if (error) {
-        return <h1 className="text-3xl text-center text-white font-bold">Error: {error.message}</h1>
+        return <h1 className="text-3xl text-center text-white font-bold my-4">Error: {error.message}</h1>
     }
 
 
