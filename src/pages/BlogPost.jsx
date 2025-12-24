@@ -42,7 +42,7 @@ export default function BlogPost({ setBlogs, data, setData, error, setError, loa
             
             {data.map((info) => (
                 <div 
-                    className="blog-post border-2 border-blue-500 w-[50%] my-10 mb-10 p-5 text-center rounded-xl"
+                    className="blog-post border-2 border-blue-500 w-[50%] my-10 mb-10 p-3 text-center rounded-xl"
                     key={info.id}>
                     <h2 className="text-3xl font-bold my-3">{info.title}</h2>
                     <hr />
