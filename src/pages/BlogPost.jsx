@@ -26,7 +26,7 @@ export default function BlogPost({ setBlogs, data, setData, error, setError, loa
 
     const handleDelete = (id) => {
         setLoading(true);
-        fetch(`http://127.0.0.1:5000/delete_blog/${id}`, {
+        fetch(`${API_URL}/delete_blog/${id}`, {
             method: "DELETE"
         }).then(res => res.json())
             .then(() => setBlogs(prev => prev.filter((i) => i.id !== id)))
