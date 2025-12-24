@@ -3,13 +3,13 @@ import { useNavigate, useParams } from "react-router";
 
 export default function BlogPost({ setBlogs, data, setData, error, setError, loading, setLoading }) {
     const API_URL = import.meta.env.VITE_API_URL;
-    
+
     const navigate = useNavigate();
     const { id } = useParams();
 
     useEffect(() => {
         setLoading(true);
-        fetch(`${API_URL}}/blog-post/${id}`)
+        fetch(`${API_URL}/blog-post/${id}`)
             .then(response => response.json())
             .then(data => setData(data))
             .catch(err => setError(err))
