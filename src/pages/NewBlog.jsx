@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router";
 
 export default function NewBlog({ setBlogs, error, loading, setError, setLoading }) {
+    const API_URL = import.meta.env.VITE_API_URL;
 
     let newID = 0;
     const navigate = useNavigate();
@@ -15,7 +16,7 @@ export default function NewBlog({ setBlogs, error, loading, setError, setLoading
     const handlePost = (e) => {
         e.preventDefault();
         setLoading(true);
-        fetch("http://127.0.0.1:5000/add_blog", {
+        fetch(`${API_URL}/add_blog`, {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({

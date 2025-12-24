@@ -9,8 +9,6 @@ import NewBlog from './pages/NewBlog';
 import BlogPost from './pages/BlogPost';
 
 
-
-
 const Navbar = () => {
     return (
         <div className='top-0 sticky border-[2px] border-blue-500 backdrop-blur-3xl py-[7px] text-white mt-7 rounded-[10px]'>
@@ -49,7 +47,6 @@ const App = () => {
 
   return (
     <div>
-      
       <BrowserRouter>
         <Navbar />
         

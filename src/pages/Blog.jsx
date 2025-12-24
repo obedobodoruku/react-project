@@ -2,11 +2,13 @@ import React, { useEffect } from "react";
 import { useNavigate } from "react-router";
 
 export default function Blog({ data, setData, error, setError, loading, setLoading }) {
+    const API_URL = import.meta.env.VITE_API_URL;
+
     const navigate = useNavigate()
 
     useEffect(() => {
         setLoading(true);
-        fetch("http://127.0.0.1:5000/")
+        fetch(`${API_URL}/`)
             .then(response => response.json())
             .then(data => setData(data))
             .catch(err => setError(err))
@@ -21,7 +23,6 @@ export default function Blog({ data, setData, error, setError, loading, setLoadi
         return <h1 className="text-3xl text-center text-white font-bold">Error: {error.message}</h1>
     }
 
-    
 
     return (
         <div className="text-white">
