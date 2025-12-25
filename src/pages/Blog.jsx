@@ -34,7 +34,7 @@ export default function Blog({ data, setData, error, setError, loading, setLoadi
             >Add Blog</button>
             {data.map((info) => (
                 <div 
-                    className="border-2 border-blue-500 mb-10 p-3 rounded-xl"
+                    className="border-2 border-blue-500 mb-10 p-3 rounded-xl w-full"
                     key={info.id}>
                     <h2 className="text-3xl font-bold my-3">{info.title}</h2>
                     <hr />
