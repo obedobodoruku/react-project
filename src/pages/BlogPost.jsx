@@ -49,7 +49,7 @@ export default function BlogPost({ setBlogs, data, setData, error, setError, loa
                     <h3 className="text-[1.2rem] my-3">Written by <span className="font-bold">{info.author}</span> on <small>{new Date(info.date_posted).toLocaleString()}</small></h3>
                     <hr />
                     <p className="my-3">{info.content}</p>
-                    {   process.env.NODE_ENV === "development" && (
+                    {   import.meta.env.MODE === "development" && (
                         <button className="bg-blue-500 my-3 px-3 py-[2px] w-[130px] font-bold rounded-[7px]" onClick={() => handleDelete(info.id)} type="button">Delete</button>
                     )
                     }
