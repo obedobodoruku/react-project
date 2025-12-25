@@ -38,8 +38,8 @@ export default function BlogPost({ setBlogs, data, setData, error, setError, loa
     }
 
     return (
-        <div className="h-[100vh]">
-            <div>
+        <div className="flex flex-col min-h-screen">
+            <div className="flex items-center justify-center">
                 {data.map((info) => (
                 <div 
                     className="blog-post flex flex-col items-center justify-center border-2 border-blue-500 w-[50%] my-10 mb-10 p-3 text-center text-white rounded-xl h-[600px]"
