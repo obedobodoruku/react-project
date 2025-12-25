@@ -38,16 +38,16 @@ export default function BlogPost({ setBlogs, data, setData, error, setError, loa
     }
 
     return (
-        <div className="flex flex-col items-center justify-center text-white ">
-            
-            {data.map((info) => (
+        <div className="h-[100vh]">
+            <div>
+                {data.map((info) => (
                 <div 
-                    className="blog-post border-2 border-blue-500 w-[50%] my-10 mb-10 p-3 text-center rounded-xl"
+                    className="blog-post flex flex-col items-center justify-center border-2 border-blue-500 w-[50%] my-10 mb-10 p-3 text-center text-white rounded-xl h-[600px]"
                     key={info.id}>
-                    <h2 className="text-3xl font-bold my-3">{info.title}</h2>
-                    <hr />
+                    <h2 className="text-3xl font-bold mb-7">{info.title}</h2>
+                    <hr class="w-full border-1 border-white" />
                     <h3 className="text-[1.2rem] my-3">Written by <span className="font-bold">{info.author}</span> on <small>{new Date(info.date_posted).toLocaleString()}</small></h3>
-                    <hr />
+                    <hr class="w-full border-1 border-white" />
                     <p className="my-3">{info.content}</p>
                     {   import.meta.env.MODE === "development" && (
                         <button className="bg-blue-500 my-3 px-3 py-[2px] w-[130px] font-bold rounded-[7px]" onClick={() => handleDelete(info.id)} type="button">Delete</button>
@@ -56,6 +56,8 @@ export default function BlogPost({ setBlogs, data, setData, error, setError, loa
                     
                 </div>
             ))}
+            </div>
+            
         </div>
     )
 }
